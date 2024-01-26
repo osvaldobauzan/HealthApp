@@ -9,9 +9,8 @@ The Health App stands as the inaugural endeavor, stemming from the imperative ne
 Track Pack App:
 Introducing the Track Pack App, a dynamic Python solution to the perennial woe of parcel tracking from myriad providers such as Amazon and various mail services. This sophisticated program empowers users to effortlessly register incoming packages, offering a streamlined interface to monitor their transit progress. Whether it's awaiting delivery or already in transit, users can seamlessly check the status of their packages, modifying pertinent details as needed. The Track Pack App revolutionizes the package tracking experience by centralizing information and simplifying the management of shipments, ultimately ensuring that users stay in control of their deliveries.
 
-[Software Demo Video]([http://youtube.link.goes.here](https://youtu.be/uH2P9PjFGdw))
+[Software Demo Video]([https://youtu.be/uH2P9PjFGdw])
 
-## Cloud Database
 
 # Cloud Database Description:
 
@@ -75,8 +74,8 @@ By leveraging these tools, the development process was not only efficient but al
 ## Useful Websites
 
 
-- [FireStore Tutorial]([(https://firebase.google.com/docs/firestore?hl=es)])
-- [FireStore Docs]([(https://cloud.google.com/firestore/docs)])
+- [FireStore Tutorial](https://firebase.google.com/docs/firestore?hl=es)
+- [FireStore Docs](https://cloud.google.com/firestore/docs)
 - [CRUD Creation](https://cosasdedevs.com/posts/como-crear-un-crud-en-python-parte-1-estructura-y-clase/)
 
 ## Future Work
