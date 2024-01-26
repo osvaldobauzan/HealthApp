@@ -1,4 +1,4 @@
-## Overview
+# Overview
 
 
 I created two different programs, both written in Python, to address distinct issues. Both projects connect to or utilize a cloud-based database: Firestore.
@@ -9,16 +9,16 @@ The Health App stands as the inaugural endeavor, stemming from the imperative ne
 Track Pack App:
 Introducing the Track Pack App, a dynamic Python solution to the perennial woe of parcel tracking from myriad providers such as Amazon and various mail services. This sophisticated program empowers users to effortlessly register incoming packages, offering a streamlined interface to monitor their transit progress. Whether it's awaiting delivery or already in transit, users can seamlessly check the status of their packages, modifying pertinent details as needed. The Track Pack App revolutionizes the package tracking experience by centralizing information and simplifying the management of shipments, ultimately ensuring that users stay in control of their deliveries.
 
-[Software Demo Video]([https://youtu.be/uH2P9PjFGdw])
+[Software Demo Video](https://youtu.be/uH2P9PjFGdw)
 
 
-# Cloud Database Description:
+## Cloud Database Description:
 
 The chosen cloud database for these projects is Firestore. Firestore is a NoSQL, document-oriented database provided by Google Cloud Platform, offering real-time synchronization and seamless scalability. It is designed to facilitate the storage and retrieval of data in a flexible and efficient manner, making it an ideal choice for applications that demand dynamic, real-time updates and collaboration.
 
 Firestore operates on a collection-document model, where data is organized into collections, and each collection contains individual documents. This schema-less approach allows for versatile data modeling and supports the storage of complex, nested structures, making it well-suited for a wide range of applications.
 
-# Database Structure:
+## Database Structure:
 
 1. Health App:
    - Collection: `SleepLogs`
@@ -40,7 +40,7 @@ Firestore operates on a collection-document model, where data is organized into 
 
 This structured approach allows for efficient retrieval and manipulation of data, ensuring that each app can seamlessly interact with Firestore to provide users with a smooth and responsive experience while maintaining data integrity and security.
 
-## Development Environment
+# Development Environment
 
 The software for both the Health App and Track Pack App was crafted using a set of powerful tools to streamline the development process. Here's a breakdown of the tools employed:
 
@@ -71,14 +71,14 @@ Additional Libraries: (Specific libraries used for features, such as date handli
 (Include any relevant libraries depending on the specific functionalities implemented in each app.)
 By leveraging these tools, the development process was not only efficient but also facilitated collaboration, version control, and integration with cloud services, ensuring the successful creation of the Health App and Track Pack App.
 
-## Useful Websites
+# Useful Websites
 
 
-- [FireStore Tutorial](https://firebase.google.com/docs/firestore?hl=es)
-- [FireStore Docs](https://cloud.google.com/firestore/docs)
+- [FireStore Tutorial](https://firebase.google.com/docs/firestore?hl=es/)
+- [FireStore Docs](https://cloud.google.com/firestore/docs/)
 - [CRUD Creation](https://cosasdedevs.com/posts/como-crear-un-crud-en-python-parte-1-estructura-y-clase/)
 
-## Future Work
+# Future Work
 
 - Connect to Amazon API for packs info
 - Make them more user - friendly
