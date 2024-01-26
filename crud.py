@@ -8,8 +8,7 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 formato = '(formato numérico "dd mm aaaa")'
 
-# -----------------CRUD -------------------------
-# Create a new document in Firestore
+
 def create_document(collection, document_data):
     custom_id = document_data["dia"]
     custom_id = re.sub("[-/ ]", "_", custom_id)
@@ -18,7 +17,7 @@ def create_document(collection, document_data):
     print("Has registrado este día con el código:", doc_ref.id)
 
 
-# Read a document from Firestore
+
 def read_document(collection, document_id):
     document_id = re.sub("[-/ ]", "_", document_id)
     document_id = f"{document_id}_id"
@@ -29,7 +28,7 @@ def read_document(collection, document_id):
     else:
         print("¡No existe el día solicitado!")
 
-# Update a document in Firestore
+
 def update_document(collection, document_id, update_data):
     document_id = re.sub("[-/ ]", "_", document_id)
     document_id = f"{document_id}_id"
@@ -37,7 +36,7 @@ def update_document(collection, document_id, update_data):
     doc_ref.update(update_data)
     print('¡Día modificado con éxito!')
 
-# Delete a document from Firestore
+
 def delete_document(collection, document_id):
     document_id = re.sub("[-/ ]", "_", document_id)
     document_id = f"{document_id}_id"
@@ -45,7 +44,6 @@ def delete_document(collection, document_id):
     doc_ref.delete()
     print("¡Día eliminado con éxito!")
 
-# OTRAS FUNCIONES -----------------------------------
 def comprueba(input):
     pat = r"[0-9]{2}[-/ ][0-9]{2}[-/ ][0-9]{4}"
     search = re.search(pat, input)
@@ -54,22 +52,6 @@ def comprueba(input):
     else:
         print("No es una fecha válida")
         return False
-
-
-# -----------------ejemplos -------------------------
-
-# Usage example
-# create_document("users", {"name": "John Doe", "email": "johndoe@example.com"})
-
-# Usage example
-# read_document("sueno", "8NuoOdJMJTThM2679NeC")
-
-# Usage example
-# update_document('users', 'document_id123', {'name': 'Jane Smith'})
-
-# Usage example
-# delete_document("users", "document_id123")
-# -----------------menu -------------------------
     
 options = {
     1: 'Añadir día',
@@ -94,7 +76,7 @@ while loop:
 
     selection = input("🌜✨✨✨✨✨✨✨✨✨✨✨✨✨🌛\n\nElige tu opción: ")
 
-    # Print the message corresponding to the user's selection.
+
     if selection == "1":
         fecha_correcta = False
         while fecha_correcta is False:
